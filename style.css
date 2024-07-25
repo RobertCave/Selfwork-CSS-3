@@ -1,0 +1,236 @@
+/* Sostituito colore Yellow con #fcec4f, il giallo del logo Aulab: meno spigoloso :-) */
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    
+}
+
+body{
+    margin-top:  0px;
+}
+
+
+.logo {
+    width: 100px;
+    align-self:flex-start;
+}
+
+
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+
+}
+
+nav a {
+    color: grey;
+}
+nav ul {
+    
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+nav li {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: medium;
+    padding: 10px; 
+}
+
+.link:hover {
+    background-color: black;
+    color: #fcec4f;
+    
+}
+
+.intestazione {
+    background-color: #fcec4f;
+    color: black;
+}
+
+
+.percorso{
+    font-weight: bold;
+    background-color: black;
+    color: #fcec4f;
+    padding-left: 15px;
+}
+
+.percorso a {
+    color: #fcec4f;
+    text-decoration: none;
+}
+
+h1{
+    background-color: #fcec4f;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    color: black;
+    padding-left: 15px;
+    
+}
+
+h2 {
+    font-family: "Oswald", sans-serif;
+    height: 70px;
+    color: black; 
+    padding: 20px;
+    
+}
+
+
+h3{
+    font-family: "Oswald", sans-serif;
+    background-color: #fcec4f;
+    color: black;
+    
+}
+
+h3:hover{
+    background-color: black;
+    color: #fcec4f;
+    
+}
+.blog-articles {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+article {
+    /* Per allontanare un po gli articoli tra di loro */
+    margin-bottom: 30px;
+    /* Per spazio a destra con l'aside */
+    margin-right: 10px;
+    width: 60%;
+}
+
+article figure {
+    
+    text-align: center;
+}
+
+
+article button {
+    background-color: black;
+    color: #fcec4f;
+    font-family: "Oswald", sans-serif;
+    padding: 10px 25px; 
+    text-align: center;
+}
+
+article button:hover{
+    background-color: #fcec4f;
+    color: black;
+}
+
+article p {
+    text-align: justify;
+
+}
+
+aside{
+    width: 40%;
+    padding-left: 10px;
+    vertical-align: bottom;
+    border-left: 1px black dotted;
+    
+}
+
+time{
+    font-size: 10pt;
+}
+
+
+
+.immagine-articolo {  
+    /* Come suggerito da tutor. Molto meglio così perchè tutto è più responsive. Grazie */
+    width: 100%; 
+    height: auto;
+}
+
+
+.VaiSopra {
+    width: 50px;
+    margin: 15px;
+    position: fixed;
+    z-index: 20;
+    right: 0;
+    bottom: 0;
+    border-radius: 15%;
+    background-color: #fcec4f;  /* Abbastanza gringe */
+    animation: pulsa 3s infinite;
+
+    
+}
+
+.VaiSopra:hover {
+    animation: pulsa 500ms infinite;
+}
+
+footer {
+    font-size: small;
+    background-color: lightgray;
+    height: 30px;
+    text-align: center;
+}
+
+
+
+@keyframes pulsa {
+    0% {
+      box-shadow: 0 0 0 0px rgba(53, 50, 5, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 0 10px rgba(255, 200, 0, 0);
+    }
+  }
+
+/* ---------------------- TABLET --------------------------- */
+
+@media screen and (max-width:  768px){
+    
+    .logo {
+        width: 100px;
+        align-self:left;
+        padding: 10px;
+        
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        list-style-type: none;
+        padding: 7px;
+    }
+    
+    
+}
+
+
+
+
+
+/* ---------------------- MOBILE --------------------------- */
+
+@media screen and (max-width:  576px){
+
+    .VaiSopra { 
+        width: 35px;
+        margin: 15px;
+    }
+
+}

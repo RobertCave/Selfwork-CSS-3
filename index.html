@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfwork CSS 2 </title>
+    
+    <!-- Importiamo Google Fonts: Montserrat (testo) e Oswal (Titoli) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- Importiamo il CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--   
+    aggiungi la seguente immagine sul progetto. Dev’essere posizionata fissa in basso a destra dello schermo (a simulare un bottone “torna su“).
+
+
+    crea un’animazione a tua scelta per questa icona (pulse, vibrazione ecc sono buone idee).
+    questa icona non dev’essere mai coperta da testo o altri elementi. Dev’essere sempre in sovrimpressione.
+    tramite una mediaquery, fai in modo che l’icona diventi piu' piccola su piccolo schermo.
+    
+    -->
+            
+            <a id="Top"></a>
+            <nav>
+                <img src="./media/logo.png" alt="Logo Aulab" class="logo">
+                <ul>
+                    <li><a href="https://aulab.it" target="_blank" class="link">CORSI</a></li>
+                    <li><a href="https://aulab.it/guide" target="_blank" class="link">GUIDE</a></li>
+                    <li><a href="https://aulab.it/" target="_blank" class="link">WEBINAR</a></li>
+                    <li><a href="https://aulab.it/blog" target="_blank" class="link">BLOG</a></li>
+                    <li><a href="https://aulab.it/" target="_blank" class="link">CHI SIAMO</a></li>
+                    <li><a href="https://aulab.it" target="_blank" class="link">SEI UN'AZIENDA?</a></li>
+                </ul>
+            </nav>
+            
+            <header class="intestazione">  
+                <h1>Aulab Blog</h1>
+                
+                <!-- Barra dei percorsi -->
+                <div class="percorso">
+                    <a href="#">Home</a> >> Blog
+                </div>
+            </header>
+            
+            <main>
+                <h2>Articoli in evidenza</h2>
+                <!--  Articoli del blog -->
+                <section>
+                    
+                    <span class="blog-articles">
+                        <article>
+                            <figure>
+                                <img src="./media/1.png" alt="Prima immagine" class="immagine-articolo">
+                            </figure>
+                            
+                            <header> 
+                                <h3>Cos’è il linguaggio HTML e come impararlo</h3>
+                                <time>31 Agosto 2021</time>
+                            </header>
+                            
+                            <p>Il linguaggio HTML (Hypertext Markup Language) è uno dei più conosciuti e diffusi: lo si trova infatti praticamente in tutte le pagine web esistenti. È una scelta popolare tra i principianti Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis, aliquid magni consequuntur adipisci ullam nemo, cum rem odit sed ducimus aperiam nisi ut praesentium, nesciunt quaerat. Temporibus, aut nesciunt.</p>
+                            <button>Leggi tutto ></button>
+                            
+                        </article>
+                        <!-- Spero di aver inteso bene la traccia dell'esercizio :-/  -->
+                        <aside> 
+                            Aside<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis qui commodi asperiores vitae veniam possimus itaque officia tempore deserunt debitis dolorem iusto, eum at illum minus voluptas totam beatae facilis?
+                        </aside>
+                    </span>
+                    
+                    
+                    <span class="blog-articles">
+                        <article>
+                            <figure>
+                                <img src="./media/2.png" alt="Seconda immagine" class="immagine-articolo">
+                            </figure>
+                            <header>
+                                <h3>Corso Javascript online: cosa c’è da sapere</h3>
+                                <time>21 Dicembre 2020</time>
+                            </header>      
+                            <p>
+                                Essere uno sviluppatore web vuol dire imparare più linguaggi di programmazione per poter creare diversi tipi di applicazioni.  Per ogni applicazione, la maggior parte delle volte, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque voluptatum tempore, obcaecati adipisci facere nam dolorem temporibus expedita exercitationem nulla explicabo minus laboriosam eius facilis, cumque quibusdam consequatur ratione.
+                            </p>
+                            <button>Leggi tutto ></button>
+                        </article>
+                        <aside> 
+                            Aside<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis qui commodi asperiores vitae veniam possimus itaque officia tempore deserunt debitis dolorem iusto, eum at illum minus voluptas totam beatae facilis?
+                        </aside>
+                    </span>
+                    
+                    <span class="blog-articles">
+                        <article>
+                            <figure>
+                                <img src="./media/3.png" alt="Terza immagine" class="immagine-articolo">
+                            </figure>
+                            <header>
+                                <h3>Come imparare a programmare con un corso PHP</h3>
+                                <time>1 Dicembre 2020</time>
+                            </header>
+                            <p>Un buon programmatore, si sa, necessita di un ampio bagaglio di conoscenze per potersi districare tra le difficoltà che questo mestiere comporta. Oggi le richieste sul mercato sono Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi rerum veniam temporibus repellendus. Adipisci suscipit deserunt praesentium molestias reiciendis magnam tenetur beatae commodi, corporis consequuntur itaque aliquid architecto ex neque!	</p>
+                            <button>Leggi tutto ></button>
+                        </article>  
+                        <aside> 
+                            Aside<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis qui commodi asperiores vitae veniam possimus itaque officia tempore deserunt debitis dolorem iusto, eum at illum minus voluptas totam beatae facilis?
+                        </aside>
+                    </span>
+                    
+                    
+                </section>
+                
+            </main>
+            <a href="#top" ><img src="./media/top.png" alt="Torna in alto"  class="VaiSopra"></a>
+            <footer>Copyright 2024 Aulab Srl - Tutti i diritti riservati - P.IVA IT07647440721</footer>
+        </body>
+        </html>
